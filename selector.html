@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector.html</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    //    $(document).ready(function(){
+    //     //    $("li").eq(3).css("background","yellow");
+    //         // $("div>li").first().nextUntil("div>p").css("background","aqua");
+    //         $("ol>li").parentsUntil("div[name]").css("background","red");
+    //    });
+    $(function () {
+                let lis = $("div>li");
+                console.log(lis);
+                $(list).each();
+            })
+    </script>
+</head>
+<body>
+    <h1 id="title">제목</h1>
+    <h2 class="subTitle">부제목1</h2>
+    <h2 class="subTitle">부제목2</h2>
+     <div name="myDiv">
+        <h2>부제목2-1</h2>
+        <ul>
+            <li>과일1</li>
+            <li>과일2
+                <ol>
+                    <li>복숭아</li>
+                </ol>
+            </li>
+        </ul>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <li>메뉴5</li>
+        <p> 우악</p>
+    </div>
+    <h2 class="subTitle">부제목3</h2>
+
+</body>
+</html>

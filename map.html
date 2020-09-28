@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map.html</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            let ids= $("[type='checkbox']").map((a,b) =>{
+                console.log(a,b);
+                return b.id;
+            }).get().join('-');
+            // console.clear();
+            // console.log(ids);
+            let chkboxes = $.grep($("inputLcheckbox"), (a,b)=>{
+                console.log(a,b);
+                return (b>0 ? a : null); //grep은 뒤에있는 인ㄷ게스키보드가 이상한거같기더ㅗ히거 ㅏ광휴ㅣ형이 이상한거같기도 하고 이상한거같다~~
+                
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <form>
+        <div>
+            <label dor="one">One</label>
+            <input type="checkbox" id="one">
+        </div>
+        <div>
+            <label dor="two">Two</label>
+            <input type="checkbox" id="two">
+        </div>
+        <div>
+            <label dor="three">Three</label>
+            <input type="checkbox" id="three">
+        </div>
+    </form>
+</body>
+</html>
